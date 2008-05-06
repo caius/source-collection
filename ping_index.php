@@ -1,6 +1,13 @@
+<!-- 
+	Pings each machine in turn and links to them
+	if they are active. I use it at http://caius.in/
+	to ping my machines on the internal network
+	and link through to them only if they are active.
+-->
+
 <!-- Remember to format this into proper HTML or I'll send gsnedders after you! -->
 <?php
-// Pings IRIs
+#  Pings IRIs
 
 class Ping
 {

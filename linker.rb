@@ -1,3 +1,8 @@
+# Takes a block of text and converts any links into proper
+# <a href="#">#</a> html links. Can also truncate long links
+# to a pre-defined length if requested.
+# 
+
 class Linker
   attr_reader :matches, :string
   @matches = Array.new

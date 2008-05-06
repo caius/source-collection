@@ -5,8 +5,6 @@
 #  USAGE: tar_svn «url» «path» «version»
 #  
 #  Created by Caius Durling <dev at caius dot name> on 2007-06-19.
-#  Copyright 2007 Hentan Software.
-#  Licenced under the Creative Commons Attribution-NonCommercial-ShareAlike 2.0 License.
 #  
 # v0.1
 #   Initial Release

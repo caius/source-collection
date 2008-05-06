@@ -5,7 +5,6 @@
 #  USAGE: ruby big_gob.rb <username_1> <username_2> (optional: <username_3>, etc)
 #  
 #  Created by Caius Durling on 2008-04-06.
-#  Copyright 2008 Caius Durling. All rights reserved.
 # 
 # Output Example:
 =begin

@@ -1,3 +1,6 @@
+# Scans the airwaves for the defined network
+# A kind of poor mans netstumbler if you will.
+
 total = 10
 network = "SCAT-STUDENT"
 found = 0
