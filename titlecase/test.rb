@@ -10,16 +10,7 @@ class TitleCaseTest < Test::Unit::TestCase
   def setup
     @str = ["This", "script"]
   end
-
-=begin NB: This test will fail
-  def test_gruber_fail_example
-    # This test will fail until I fix the code accordingly
-    str = "2lmc Spool: 'Gruber on OmniFocus and Vapo(u)rware'"
-    assert_equal str, TitleCase.parse( str )
-  end
-=end
-
-    
+  
   # Small words stay as such
   def test_small_words_within_phrase
     %w( a an and as at but by en for if in of on or the to v v. via vs vs. ).each do |word|
