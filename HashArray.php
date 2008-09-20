@@ -49,7 +49,7 @@ class HashArray
 	 */
 	protected function _hash_array()
 	{
-		$this->_string_array();
+		$this->__toString();
 		$this->hash = md5( $this->string );
 	}
 	
@@ -59,7 +59,7 @@ class HashArray
 	 * @return void
 	 * @author Caius Durling <dev@caius.name>
 	 */
-	protected function _string_array( $array=null )
+	protected function __toString( $array=null )
 	{
 		# Check if its set or not
 		isset($array) ? $a = $array : $a = $this->array;
@@ -69,7 +69,7 @@ class HashArray
 		$out = array();
 		foreach ($a as $key => $value) {
 			$out[] = $key;
-			$out[] = ( is_array($value) ? $this->_string_array($value) : $value );
+			$out[] = ( is_array($value) ? $this->__toString($value) : $value );
 		}
 		# Concat it
 		$out = implode("", $out);

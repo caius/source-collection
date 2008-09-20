@@ -27,7 +27,7 @@ end
 
 
 # Example:
-print_class_structure( RuntimeError )
+print_class_structure( StandardError )
 __END__
 >> RuntimeError
 >> 	 -> StandardError
