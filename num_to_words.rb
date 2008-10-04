@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 %w( rubygems linguistics ).each {|g| require g rescue puts "Error loading #{g}" and exit(1) }
 
 unless ARGV.size == 2
