@@ -28,5 +28,5 @@ end
 
 
 ["a", "az", "azz", "zzz"].each do |str|
-  puts "#{str} ---> #{increase(str)} ---> #{str.succ} ==== #{increase(str) == str.succ}"
+  puts "#{str} ---> #{increase(str)} <---> #{str.succ} ==== #{increase(str) == str.succ}"
 end
