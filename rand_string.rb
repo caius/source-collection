@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # Generates a random string of length x
 # using a-z A-Z 0-9
 

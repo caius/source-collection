@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # This will be fun to write in C
 
 # Increases the letter passed in according to chars

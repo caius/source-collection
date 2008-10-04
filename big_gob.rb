@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # 
 #  big_gob.rb
 #  Tells you who has the biggest gob from a group of twitter folk.

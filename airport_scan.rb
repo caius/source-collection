@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 # Scans the airwaves for the defined network
 # A kind of poor mans netstumbler if you will.
 

@@ -1,4 +1,6 @@
-# 
+#!/usr/bin/env ruby
+
+#
 #  tar_svn.rb
 #  Tars a svn repo
 # 
