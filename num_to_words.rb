@@ -1,4 +1,4 @@
-%w( rubygems linguistics ).each {|gem| require gem rescue puts "Error loading #{gem}" and exit(1) }
+%w( rubygems linguistics ).each {|g| require g rescue puts "Error loading #{g}" and exit(1) }
 
 unless ARGV.size == 2
 	puts "USAGE: ruby num_to_words.rb <lower_bound> <upper_bound>"
@@ -15,18 +15,17 @@ class Integer; include NumExtend; end
 
 @rev = false
 
-if ARGV.first < ARGV.last
-	@num = {
-		:one => ARGV.first.to_i,
-		:two => ARGV.last.to_i
-	}
-else
-	@num = {
-		:one => ARGV.last.to_i,
-		:two => ARGV.first.to_i
-	}
-	@rev = true
-end
+# Sort them into size order
+nums = [ARGV.first, ARGV.last].sort
+
+# Figure out if they got re-ordered
+@rev = true unless nums.first == ARGV.first
+
+# Stick into a hash for some reason
+@num = {
+		:one => nums.first.to_i,
+		:two => nums.last.to_i
+}
 
 @nums = []
 (@num[:one]..@num[:two]).each do |i|
