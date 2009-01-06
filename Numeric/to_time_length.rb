@@ -27,9 +27,12 @@ class Numeric
       # And build/return the string
       "#{r} #{j.first}#{"s" unless r == 1}#{"," unless %w(sec min).include?(j.first)}"
     end.reverse.join(" ")
+
+    # Trim the string if needed
     if trim_string && m = a[/^(0 \w+, (?:and )?)+/]
       a.gsub!(m, "")
     end
+
     a
   end
 end
